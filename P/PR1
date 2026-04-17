@@ -1,0 +1,7 @@
+print("Hola mundo")
+
+nombre = "Mohammed"
+edad = 22
+
+print("Nombre:", nombre)
+print("Edad:", edad)
