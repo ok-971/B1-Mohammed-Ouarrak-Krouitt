@@ -1,0 +1,55 @@
+# Pedir tres números
+n1 = int(input("Introduce el primer número: "))
+n2 = int(input("Introduce el segundo número: "))
+n3 = int(input("Introduce el tercer número: "))
+
+# Calcular máximo
+if n1 >= n2 and n1 >= n3:
+maximo = n1
+elif n2 >= n1 and n2 >= n3:
+maximo = n2
+else:
+maximo = n3
+
+# Calcular mínimo
+if n1 <= n2 and n1 <= n3:
+minimo = n1
+elif n2 <= n1 and n2 <= n3:
+minimo = n2
+else:
+minimo = n3
+
+# Comprobar si máximo es par
+if maximo % 2 == 0:
+parmax = True
+else:
+parmax = False
+
+# Comprobar si mínimo es par
+if minimo % 2 == 0:
+parmin = True
+else:
+parmin = False
+
+# Mostrar resultados
+print("Máximo:", maximo)
+print("¿El máximo es par?", parmax)
+
+print("Mínimo:", minimo)
+print("¿El mínimo es par?", parmin)
+
+# Mostrar si todos son pares o impares
+if n1 % 2 == 0:
+print(n1, "es par")
+else:
+print(n1, "es impar")
+
+if n2 % 2 == 0:
+print(n2, "es par")
+else:
+print(n2, "es impar")
+
+if n3 % 2 == 0:
+print(n3, "es par")
+else:
+print(n3, "es impar")
